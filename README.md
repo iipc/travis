@@ -17,7 +17,7 @@ Example .travis.yml configuration
 language: java
 jdk:
   - oraclejdk7
-before_install: "git clone git@github.com:iipc/travis.git target/travis"
+before_install: "git clone https://github.com/iipc/travis.git target/travis"
 before_script:
  - "echo $JAVA_OPTS"
  - "export JAVA_OPTS=-Xmx1024m"
