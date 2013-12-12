@@ -8,7 +8,7 @@ if [ -n $TRAVIS_PULL_REQUEST ]; then
 echo "TRAVIS_PULL_REQUEST is set to" $TRAVIS_PULL_REQUEST
 
 if [ $TRAVIS_PULL_REQUEST == 'false' ]; then
-  echo "TRAVIS_PULL_REQUEST is not false. Deploying..."
+  echo "TRAVIS_PULL_REQUEST is false. Deploying..."
   mvn deploy --settings target/travis/settings.xml -B -DskipTests
 if [ $? -ne 0 ]; then
   exit -1
