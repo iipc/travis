@@ -1,4 +1,4 @@
-mvn install --settings target/travis/settings.xml -B
+mvn install site --settings target/travis/settings.xml -B
 if [ $? -ne 0 ]; then
   exit -1
 fi
